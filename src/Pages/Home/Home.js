@@ -1,24 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Home.css'
-import 'animate.css';
-import Product from '../HomeData/Product';
-import HomeSection from '../HomeSection/HomeSection';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+// import './Home.css'
+// import 'animate.css';
+// import Product from '../HomeData/Product';
+// import HomeSection from '../HomeSection/HomeSection';
 
 
 
-const Home = () => {
+// const Home = () => {
     
-    return (
-        <div className='text-center '>
-             <div className='home-container text-center pb-4'>
-                <h5 className='text-mine fw-bolder animate__animated animate__jackInTheBox'>Distribution, Storage, Warehousing & Fulfillment</h5>
-                <Link className='see-link mb-5' to="/management">See More</Link>
-            </div>
-            <Product></Product>
-            <HomeSection></HomeSection>
-        </div>
-    );
-};
+//     return (
+//         <div className='text-center '>
+//              <div className='home-container text-center pb-4'>
+//                 <h5 className='text-mine fw-bolder animate__animated animate__jackInTheBox'>Distribution, Storage, Warehousing & Fulfillment</h5>
+//                 <Link className='see-link mb-5' to="/management">See More</Link>
+//             </div>
+//             <Product></Product>
+//             <HomeSection></HomeSection>
+//         </div>
+//     );
+// };
 
-export default Home;
+// export default Home;
