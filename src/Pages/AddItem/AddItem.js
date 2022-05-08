@@ -43,21 +43,21 @@ const AddItem = () => {
       });
   };
   return (
-    <div className="bg-addItem rounded  text-center">
-      <img
+    <div className="bg-addItem rounded  text-center container py-5 my-5 ">
+      {/* <img
         className="w-25"
         src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/shop-pict-basket_add.png"
         alt=""
-      />
+      /> */}
       {/* update field for adding object */}
       <form
         onSubmit={handleAddProduct}
-        className=" d-flex row justify-content-center align-items-start mx-auto py-5 text-center "
+        className=" d-flex row justify-content-center align-items-start mx-auto py-5 text-center"
       >
         {/* one  */}
         <div className="col-md-6 col-lg-6">
           <input
-            className="w-100 mb-1 p-1 rounded sizing"
+            className="w-100 mb-3 p-1 rounded sizing"
             type="text"
             name="name"
             placeholder="Product Name"
@@ -65,7 +65,7 @@ const AddItem = () => {
           />
           <br />
           <input
-            className="w-100 mb-1 p-1 rounded sizing"
+            className="w-100 mb-3 p-1 rounded sizing"
             type="text"
             name="supplier"
             placeholder="Supplier Name"
@@ -75,7 +75,7 @@ const AddItem = () => {
         {/* two */}
         <div className="col-lg-6 col-md-6">
           <input
-            className="w-100 mb-1 p-1 rounded sizing"
+            className="w-100 mb-3 p-1 rounded sizing"
             type="number"
             name="quantity"
             placeholder="Product Quantity"
@@ -83,7 +83,7 @@ const AddItem = () => {
           />
           <br />
           <input
-            className="w-100 mb-1 p-1 rounded sizing"
+            className="w-100 mb-3 p-1 rounded sizing"
             type="text"
             name="img"
             placeholder="Image URL"
@@ -91,7 +91,7 @@ const AddItem = () => {
           />
         </div>
         {/* three */}
-        <div className="col-lg-12 col-md-12">
+        <div className="col-lg-12 col-md-12 py-2">
           <textarea
             className="w-100  p-1 rounded sizing"
             name="body"
@@ -102,7 +102,7 @@ const AddItem = () => {
             required
           ></textarea>
           <input
-            className="w-100 p-2 rounded add-btn sizing"
+            className="w-50 p-2 rounded add-btn sizing"
             type="submit"
             value="ADD NEW PRODUCT"
           />

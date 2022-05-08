@@ -1,5 +1,5 @@
 .bg-addItem{
-    background-color: #03203cdc;
+    background-color: #b1b4b8dc;
 }
 .sizing{
     border: none;
@@ -9,8 +9,10 @@
     background-color: #ffffffb5;
 }
 .add-btn{
-    background-color: #03203C;
+    background-color: #35ad10;
     color: aliceblue;
     border: 3px solid #ffffffb5;
     font-weight: 900;
+    margin-top:22px;
+   
 }
