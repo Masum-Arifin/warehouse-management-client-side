@@ -11,11 +11,11 @@ import React from "react";
   
   const Footer = () => {
     return (
-      <div className="w-100 text-light bg-secondary">
+      <div className="w-100 text-light footer">
         <div className="py-3 d-flex align-items-center text-center justify-content-center">
           <div className="d-flex align-items-center justify-content-between">
             <div className="">
-              <img
+              <img className="bg-light "
                 src={icon}
                 width="60px"
                 style={{ marginRight: "15px" }}
