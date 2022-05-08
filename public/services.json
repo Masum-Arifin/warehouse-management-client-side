@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Multi-temp Space",
+        "price": "300",
+        "description": "Our company has over 200,000 sq. ft. of strategically located, sprinklered, multi-temp space offering inside rail, 30 doors, separate .",
+        "img": "https://i.ibb.co/y00Jk6X/mt-1508-home-services2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Quick Freezing",
+        "price": "100",
+        "description": "DEPOT Company offer quick freezing services. We can accommodate up to 750 pallets in the quick freeze room.",
+        "img": "https://i.ibb.co/cynLdQQ/mt-1508-home-services1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Deep Freezing ",
+        "price": "150",
+        "description": "We has deep freeze capabilities of -20 degrees F for ice cream, fish, vegetables and other food products doors, separate",
+        "img": "https://i.ibb.co/HFtX2bT/mt-1508-home-services3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Deep Lane/Radion Shuttle",
+        "price": "180",
+        "description": "We were able to install 12,000 pallet positions conventionally would hold 7,000 what allows for maximum use of warehouse space",
+        "img": "https://i.ibb.co/HdP4zKD/mt-1508-home-services5.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Tempering",
+        "price": "100",
+        "description": "We offer a label and sticker application service perfect for promotional and  fish, vegetables shipping perfect for applications.promotional and  fish, vegetables ",
+        "img": "https://i.ibb.co/QdF2mmG/mt-1508-home-services4.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Packing",
+        "price": "300",
+        "description": "We carefully packs products with your promotional and  fish, vegetables  packaging to present a strong, uniform brand image to your customers.",
+        "img": "https://i.ibb.co/7vwqGWV/mt-1508-home-services11.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Cross Docking",
+        "price": "300",
+        "description": "DEPOT Company able to unload your product and directly load onto outbound trucks and rail",
+        "img": "https://i.ibb.co/d7QVPWV/mt-1508-home-services7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Rail Transloading",
+        "price": "300",
+        "description": "DEPOT Company  transloads hundreds of dry, refrigerated, and frozen railcars a year, with plenty of onsite storage warehousing, if needed.",
+        "img": "https://i.ibb.co/s5fPYcN/mt-1508-home-services12.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Labeling",
+        "price": "300",
+        "description": " Labeling web pages address the labeling requirements , Drug, and Cosmetic Act and its amendments. Food labeling is required for most prepared",
+        "img": "https://i.ibb.co/C798qgw/mt-1508-home-services8.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Inspection",
+        "price": "300",
+        "description": "The inspection report is the 'product' that a client invests in and should contain all detail about the inspection activity or 'services.",
+        "img": "https://i.ibb.co/5T2rNH0/mt-1508-home-services9.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Leasing",
+        "price": "300",
+        "description": "A leasing company provides a physical asset or service for use by a commercial client or individual for an established period of time (sometimes with provisions.",
+        "img": "https://i.ibb.co/b6zrXHq/mt-1508-home-services10.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Import/Export",
+        "price": "300",
+        "description": "Find Import Export Companies In Usa and Save. Always Sale. Simple Search. Compare Simply. The Best Price. Cheap Prices. Save Online. Large Selection.",
+        "img": "https://i.ibb.co/0cZVHZ2/mt-1508-home-services6.jpg"
+    }
+  ]
