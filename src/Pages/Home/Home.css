@@ -1,0 +1,38 @@
+.home-container {
+    background-image:
+    url('/src/img/home-header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width:100%;
+}
+.text-mine{
+    color: white;
+    font-size: 60px;
+    padding-top: 200px;
+    margin-bottom: 40px;
+    text-shadow: #1f1f19 2px 4px ;
+}
+
+.see-link{
+    text-decoration: none;
+    font-size: 25px;
+    /* color: #C7C11A; */
+    /* border: 2px solid #080808; */
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 300px;
+    color: #f5f5ee;
+    font-weight: 800;
+}
+.see-link:hover{
+    color: #eee8e8;
+    background-color: #0a0a0a;
+    
+}
+.banner-doc{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(36, 67, 57, 0.575);
+    text-shadow: #C7C11A 2px 4px ;
+}

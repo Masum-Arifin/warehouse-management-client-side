@@ -1,0 +1,52 @@
+
+.link-icon{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: aliceblue;
+    padding: 7px;
+    border-radius: 40%;
+    border: 2px solid rgb(99, 98, 96);
+}
+.link-icon:hover{
+    background-color: #07eff7f6;
+}
+.fuP{
+    text-align: justify;
+}
+.faIcon{
+    color: #080808;
+    padding-right: 5px;
+}
+.fuText{
+    color: #020202;
+    margin-bottom: 15px;
+}
+.circleType{
+    list-style-type:circle;
+    font-size: 20px;
+    
+}
+.quickLink{
+    color: rgb(232, 236, 231);
+    text-decoration: none;
+}
+
+.fuInput{
+    margin-bottom: 15px;
+}
+.fuFromSize{
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.fuFromSubmit{
+    background-color: #1ac728;
+    font-weight: 700;
+    color: rgb(240, 237, 231);
+}
+.fufotterText{
+    color: rgb(235, 240, 243);
+    margin-bottom: 0;
+}

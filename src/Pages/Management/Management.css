@@ -1,0 +1,16 @@
+.manag-img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #C7C11A;
+    border-radius: 50%;
+}
+.update-btn{
+    background-color: #28c71ab5;
+    outline: none;
+    width: 150px;
+    border: none;
+    color: rgb(245, 243, 243);
+    font-weight: 600;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}

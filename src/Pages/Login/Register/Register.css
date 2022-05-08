@@ -1,0 +1,13 @@
+.registerForm{
+    border: 2px solid rgb(12, 12, 12);
+}
+.bg-register{
+    background-color: #eceff1;
+}
+
+
+
+/* about style */
+.justify{
+    text-align: justify; 
+}

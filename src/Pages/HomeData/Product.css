@@ -1,0 +1,20 @@
+.bg-product{
+    background-color:white;
+    width: 100%;
+}
+.cards{
+   margin-bottom: 50px;
+   
+}
+.name{
+   
+    padding: 5px;
+    /* display: inline; */
+    /* background-color: #ecece78d; */
+    font-family: monospace;
+}
+
+
+.style-button:focus{
+    outline: none;
+}

@@ -1,0 +1,24 @@
+.bg-darking{
+    background-color: rgba(253, 251, 251, 0.582);
+    
+}
+
+.client-name{
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: gray ;
+}
+.feedback{
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: #bdbdb4 2px 4px ;
+}
+.section-name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border-bottom: 5px solid #C7C11A; */
+    border-radius: 15px;
+    display: inline-block;
+}
+.gray{
+    color: #17181a;
+}
