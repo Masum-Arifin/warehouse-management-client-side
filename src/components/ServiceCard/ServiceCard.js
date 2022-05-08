@@ -19,7 +19,7 @@ const ServiceCard = ({ service }) => {
               onClick={() => navigateToServiceDetail(name)}
               className="btn btn-primary w-100"
             >
-            BUY Book Now 
+            BUY Now 
             </button>
           </div>
         </div>
