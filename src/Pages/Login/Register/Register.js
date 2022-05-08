@@ -46,12 +46,12 @@ const Register = () => {
             <Form  onSubmit={handelSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">              
              <Form.Control name="name" placeholder="Your Name" /> <br />
-             <Form.Control name="email" placeholder="Enter email" required />
+             <Form.Control type="email"  name="email" placeholder="Enter email" required />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
                            
-            <Form.Control name="password" placeholder="Password" required />
+            <Form.Control type="password" name="password" placeholder="Password" required />
             </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check onClick={() =>setAgree(!agree)} className={`ps-2 fw-bold text-start ${agree ? "" : 'text-danger'}`} name='terms'  type="checkbox" label="Accept Our Rules and Condition ?" />

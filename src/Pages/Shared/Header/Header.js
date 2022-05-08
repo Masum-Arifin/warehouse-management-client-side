@@ -67,16 +67,16 @@ const Header = () => {
               </Nav.Link>
 
               {user ? (
-                <span className="signOutBtn" onClick={handleSignOut}>
-                  SIGN OUT
+                <span className="" onClick={handleSignOut}>
+                  <button type="button" class="btn btn-outline-secondary rounded-pill px-4 py-2 ms-3 shadow none fw-bold">SIGN OUT</button>
                 </span>
               ) : (
                 <Nav.Link
-                  className="hover fw-bolder fs-5"
+                  className="hover fw-bolder fs-5 rounded-pill"
                   as={Link}
                   to="login"
                 >
-                  LOGIN
+                   <button type="button" class="btn btn-outline-secondary rounded-pill px-4 py-2 ms-3 shadow none fw-bold">Login</button>
                 </Nav.Link>
               )}
             </Nav>

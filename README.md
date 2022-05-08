@@ -1,6 +1,6 @@
 Project - Warehouse Storage
 
-• This project [Live link] ()
+• This project [Live link] (https://warehouse-management-23433.web.app)
 
 ## future 
 `
@@ -33,4 +33,7 @@ What technology or assets I have used for building this website.
 • Fontawesome
 
 • MongoDb
+
+• Heroku
+
 

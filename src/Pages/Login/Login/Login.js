@@ -29,7 +29,7 @@ const Login = () => {
     // navigate(from, { replace: true });
   }
   if (error) {
-    errorElement = <p className="text-danger">Error: {error?.message} </p>;
+    errorElement = <p className="text-danger">{error?.message} </p>;
   }
 
   const handelSubmit = async (e) => {

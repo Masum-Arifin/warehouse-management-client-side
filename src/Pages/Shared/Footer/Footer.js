@@ -42,7 +42,7 @@ const Footer = () => {
     </div>
 </div>
 
-<h5 className='text-center p-3 fufotterText'>© 2019 All Rights Reserved. Design by Masum Arifin</h5>
+<h5 className='text-center p-3 fufotterText'>© 2022 All Rights Reserved. developed by Masum Arifin</h5>
 </div>
         </div>
     );
