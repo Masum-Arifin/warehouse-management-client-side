@@ -13,6 +13,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import AddItem from './Pages/AddItem/AddItem';
 import Update from './Pages/Update/Update';
 import About from './Pages/About/About';
+import MyItems from './Pages/MyItems/MyItems';
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
       <Route path='/add'element={
       <RequireAuth>
         <AddItem></AddItem>
+      </RequireAuth>
+    }></Route>
+      <Route path='/myItem'element={
+      <RequireAuth>
+        <MyItems></MyItems>
       </RequireAuth>
     }></Route>
       <Route path="*" element={<NotFound></NotFound>}></Route>

@@ -24,11 +24,7 @@ const Header = () => {
           <Navbar.Toggle className="toggle" aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link
-                className="hover fw-bolder fs-5"
-                as={Link}
-                to="/home"
-              >
+              <Nav.Link className="hover fw-bolder fs-5" as={Link} to="/home">
                 Home
               </Nav.Link>
 
@@ -48,27 +44,31 @@ const Header = () => {
                   >
                     Add Items
                   </Nav.Link>
+                  <Nav.Link
+                    className="hover fw-bolder fs-5"
+                    as={Link}
+                    to="/myItem"
+                  >
+                    My Items
+                  </Nav.Link>
                 </>
               )}
 
-              <Nav.Link
-                className="hover fw-bolder fs-5"
-                as={Link}
-                to="/blogs"
-              >
+              <Nav.Link className="hover fw-bolder fs-5" as={Link} to="/blogs">
                 Blogs
               </Nav.Link>
-              <Nav.Link
-                className="hover fw-bolder fs-5"
-                as={Link}
-                to="/about"
-              >
+              <Nav.Link className="hover fw-bolder fs-5" as={Link} to="/about">
                 About
               </Nav.Link>
 
               {user ? (
                 <span className="" onClick={handleSignOut}>
-                  <button type="button" class="btn btn-outline-secondary rounded-pill px-4 py-2 ms-3 shadow none fw-bold">SIGN OUT</button>
+                  <button
+                    type="button"
+                    className="btn btn-outline-secondary rounded-pill px-4 py-2 ms-3 shadow none fw-bold"
+                  >
+                    SIGN OUT
+                  </button>
                 </span>
               ) : (
                 <Nav.Link
@@ -76,7 +76,12 @@ const Header = () => {
                   as={Link}
                   to="login"
                 >
-                   <button type="button" class="btn btn-outline-secondary rounded-pill px-4 py-2 ms-3 shadow none fw-bold">Login</button>
+                  <button
+                    type="button"
+                    className="btn btn-outline-secondary rounded-pill px-4 py-2 ms-3 shadow none fw-bold"
+                  >
+                    Login
+                  </button>
                 </Nav.Link>
               )}
             </Nav>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Button, Form } from "react-bootstrap";
 import {
   useSendPasswordResetEmail,
@@ -8,12 +8,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 import "./Login.css";
 import axios from "axios";
+import swal from "sweetalert";
+import Loading from "../../Shared/Loading/Loading";
 
 const Login = () => {
-  const [signInWithEmailAndPassword, user, error] =
+  const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
@@ -24,14 +26,32 @@ const Login = () => {
   let from = location.state?.from?.pathname || "/";
   let errorElement;
 
-  if (user) {
-    console.log(user);
-    // navigate(from, { replace: true });
-  }
+  // if (!user) {
+  //   // console.log(user);
+
+  //   navigate(from, { replace: true });
+  // }
+  useEffect(() => {
+    if (user) {
+      swal({
+        title: "Login Successful!",
+        text: "Welcome back!",
+        icon: "success",
+      });
+      navigate(from, { replace: true });
+    }
+  }, [user, navigate, from]);
+
   if (error) {
-    errorElement = <p className="text-danger">{error?.message} </p>;
+    swal({
+      title: `${error?.message}`,
+      icon: "error",
+    });
   }
 
+  if (loading) {
+    return <Loading />;
+  }
   const handelSubmit = async (e) => {
     e.preventDefault();
     const email = emailRef.current.value;
@@ -39,15 +59,14 @@ const Login = () => {
     // jwt --------------------------
     await signInWithEmailAndPassword(email, password);
     const { data } = await axios.post(
-      "https://peaceful-thicket-62870.herokuapp.com/token",
+      "https://warehouse-management-server-side-ten.vercel.app/token",
       {
         email,
       }
     );
-    console.log(data);
     // set local store
     localStorage.setItem("accessToken", data.accessToken);
-    // navigate user
+
     navigate(from, { replace: true });
     // jwt --------------------------
   };
@@ -104,6 +123,7 @@ const Login = () => {
             >
               Login
             </Button>
+            <ToastContainer />
           </Form>
           {errorElement}
           <p className="fw-bold text-center">
@@ -126,9 +146,9 @@ const Login = () => {
             </span>
           </p>
           <SocialLogin></SocialLogin>
+          <ToastContainer />
         </div>
       </div>
-      <ToastContainer />
     </div>
   );
 };

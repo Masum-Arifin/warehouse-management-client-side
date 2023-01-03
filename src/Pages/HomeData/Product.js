@@ -11,7 +11,7 @@ const Product = () => {
     const proceed = window.confirm("Sir, Are you sure ?");
     if (proceed) {
       console.log("deleted", id);
-      const url = `https://peaceful-thicket-62870.herokuapp.com/products/${id}`;
+      const url = `https://warehouse-management-server-side-ten.vercel.app/products/${id}`;
       fetch(url, {
         method: "DELETE",
       })

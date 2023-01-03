@@ -1,11 +1,22 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import useProducts from "../../hooks/useProducts";
-import "./Management.css";
+import auth from "../../firebase.init";
 
-const Management = () => {
-  const [products, setProducts] = useProducts([]);
+const MyItems = () => {
+  const [products, setProducts] = useState([]);
   const navigate = useNavigate();
+  const [user] = useAuthState(auth);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://warehouse-management-server-side-ten.vercel.app/products?email=${user.email}`
+      )
+      .then((data) => setProducts(data.data));
+  }, [products, user.email]);
+  console.log(products);
 
   //.............................................
   const handleDeliver = (id) => {
@@ -60,4 +71,4 @@ const Management = () => {
   );
 };
 
-export default Management;
+export default MyItems;

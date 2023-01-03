@@ -5,7 +5,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../../firebase.init';
 import './Register.css'
 import SocialLogin from '../SocialLogin/SocialLogin';
-// import { async } from '@firebase/util';
+import { ToastContainer, } from 'react-toastify';
 
 
 const Register = () => {
@@ -63,6 +63,7 @@ const Register = () => {
 
                     <p className='my-3 fw-bolder'>Already Have an account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin} >Please Login</Link></p>
                     <SocialLogin></SocialLogin>
+                    <ToastContainer />
                 </div>
             </div>
 

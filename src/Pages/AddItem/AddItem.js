@@ -3,9 +3,11 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import "./AddItem.css";
 import auth from "../../firebase.init";
+import { useNavigate } from "react-router-dom";
 
 const AddItem = () => {
   // user auth
+  const navigate = useNavigate();
   const [user] = useAuthState(auth);
   console.log(user);
   // handleAddProduct for database mongodb
@@ -24,12 +26,15 @@ const AddItem = () => {
 
     // use axios for my items
     axios
-      .post("https://peaceful-thicket-62870.herokuapp.com/items", products)
+      .post(
+        "https://warehouse-management-server-side-ten.vercel.app/items",
+        products
+      )
       .then((response) => {
         console.log(response);
       });
     // send data to the server
-    fetch("https://peaceful-thicket-62870.herokuapp.com/products", {
+    fetch("https://warehouse-management-server-side-ten.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -40,6 +45,7 @@ const AddItem = () => {
       .then((data) => {
         console.log("success", data);
         e.target.reset();
+        navigate("/myItem");
       });
   };
   return (
