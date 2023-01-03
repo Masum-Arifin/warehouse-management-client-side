@@ -19,28 +19,28 @@ const MyItems = () => {
   console.log(products);
 
   //.............................................
-  const handleDeliver = (id) => {
-    let deliver = 1;
-    let quantityParse = parseInt(products.quantity);
-    let quantity = quantityParse - deliver;
+  // const handleDeliver = (id) => {
+  //   let deliver = 1;
+  //   let quantityParse = parseInt(products.quantity);
+  //   let quantity = quantityParse - deliver;
 
-    const url = `https://warehouse-management-server-side-ten.vercel.app/products/${id}`;
-    fetch(url, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(quantity),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.modifiedCount > 0) {
-          console.log("success", data);
+  //   const url = `https://warehouse-management-server-side-ten.vercel.app/products/${id}`;
+  //   fetch(url, {
+  //     method: "PUT",
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //     body: JSON.stringify(quantity),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       if (data.modifiedCount > 0) {
+  //         console.log("success", data);
 
-          setProducts(quantity);
-        }
-      });
-  };
+  //         setProducts(quantity);
+  //       }
+  //     });
+  // };
 
   //.............................................
 
