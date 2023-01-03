@@ -36,7 +36,7 @@ const Update = () => {
         `https://warehouse-management-server-side-ten.vercel.app/products/${id}`,
         {
           newQuantity,
-        }
+      }
       )
       .then((res) => console.log("updated"));
     alert("Successfully! Delivered This Item.");
